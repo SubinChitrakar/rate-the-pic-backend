@@ -4,6 +4,7 @@ exports.up = function(knex) {
         table.increments('id').primary();
         table.string('email');
         table.string('password');
+        table.boolean('admin');
     })
 };
 
